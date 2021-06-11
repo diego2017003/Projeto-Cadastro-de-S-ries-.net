@@ -11,9 +11,9 @@ namespace Series
         private Genero genero;
         private string titulo;
         private string descricao;
-        private string ano;
+        private int ano;
         private bool excluido;
-        public Serie(int id, Genero genero,string titulo,string descricao, string ano)
+        public Serie(int id, Genero genero,string titulo,string descricao, int ano)
         {
             this.id = id;
             this.genero = genero;
@@ -45,11 +45,11 @@ namespace Series
         {
             this.titulo = t;
         }
-        public string getAno()
+        public int getAno()
         {
             return this.ano;
         }
-        public void setAno(string a)
+        public void setAno(int a)
         {
             this.ano = a;
         }

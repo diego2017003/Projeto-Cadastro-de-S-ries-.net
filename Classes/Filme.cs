@@ -8,12 +8,12 @@ namespace Series
 {
     class Filme:EntidadeBase
     {
-        string ano;
+        int ano;
         string titulo;
         string descricao;
         List<Genero> genero;
         bool excluido;
-        public Filme(int id,string ano,string titulo,string descricao,List<Genero> genero)
+        public Filme(int id,int ano,string titulo,string descricao,List<Genero> genero)
         {
             this.ano = ano;
             this.titulo = titulo;
@@ -34,7 +34,7 @@ namespace Series
         public List<Genero> GetGenero() {
             return this.genero;
         }
-        public string GetAno()
+        public int GetAno()
         {
             return this.ano;
         }
